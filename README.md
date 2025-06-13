@@ -26,7 +26,7 @@ Users should be able to:
 ![mobile](/preview/mobile.png)
 ![mobile-active-state](./preview/mobile-active-state.png)
 ![desktop](./preview/desktop.png)
-![desktop-active-state](./preview/desktop-active-state.png.png)
+![desktop-active-state](./preview/desktop-active-state.png)
 
 ## My process
 
