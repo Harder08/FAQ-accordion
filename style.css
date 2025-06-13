@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100..900&display=swap');
+
+:root {
+    --White:      rgb(255, 255, 255);
+    --Purple-100: hsl(275, 100%, 97%);
+    --Purple-600: hsl(292, 16%, 49%);
+    --Purple-950: hsl(292, 42%, 14%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+
+@media (max-width: 600px) {
+    body {
+        background-image: url(/assets/images/background-pattern-mobile.svg);
+    }
+
+    .heading h1 {
+        font-size: 35px;
+    }
+
+    .main {
+        width: 300px;
+        padding: 10px;
+    }
+
+    .heading {
+        padding: 10px;
+    }
+
+    li h3 {
+        font-size: 12px;
+    }
+
+    li {
+        padding: 10px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    ul {
+        padding: 10px;
+    }
+
+    img {
+        width: 20px;
+    }
+}
+@media (min-width: 601px) {
+    body {
+        background-image: url(/assets/images/background-pattern-desktop.svg);
+    }
+    .heading h1 {
+        font-size: 45px;
+    }
+
+    .main {
+        width: 550px;
+        padding: 20px;
+    }
+
+    .heading {
+        padding: 20px;
+    }
+
+    li {
+        padding: 20px;
+    }
+
+    li h3 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    ul {
+        padding: 20px;
+    }
+}
+
+p {
+    color: var(--Purple-600);
+    transition: all .35s ease-in-out;
+}
+
+ul {
+    list-style: none;
+    padding-bottom: 0;
+}
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all .35s ease-in-out;
+}
+
+.answer.show {
+    max-height: 100px;
+    opacity: 1;
+}
+
+body {
+    background-color: var(--Purple-100);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+.main {
+    background-color: var(--White);
+    text-align: start;
+    border-radius: 15px;
+    margin: 50px 0;
+}
+
+.heading {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.change-color {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.change-color img {
+    transition: all .35s ease-in-out;
+}
+
+
+h3 {
+    transition: all .35s ease-in-out;
+}
+
+.change-color:hover h3 {
+    color: #ab25e9;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    transition: all .35s ease-in-out;
+    border-bottom: 1px solid var(--Purple-100);
+}
+
+li:last-of-type {
+    border: none;
+
+}
